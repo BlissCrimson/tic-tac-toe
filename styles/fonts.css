@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PixelifySans';
+    src: url(../assets/fonts/PixelifySans-Regular.ttf),
+        url(../assets/fonts/PixelifySans-Bold.ttf),
+        url(../assets/fonts/PixelifySans-Medium.ttf),
+        url(../assets/fonts/PixelifySans-SemiBold.ttf),
+        url(../assets/fonts/PixelifySans-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
