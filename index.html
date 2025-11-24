@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/standard.css">
 
     <script src="./scripts/templates.js"></script>
 </head>
 
-<body>
+<body onload="init()">
+    <h1>TIC TAC TOE</h1>
 
+    <div id="content"></div>
 
-
+    <div class="d_flex_c_c mt-32">
+        <button id="restartBtn" onclick="location.reload()">Spiel neu starten</button>
+    </div>
 
     <script src="scripts/script.js"></script>
 </body>

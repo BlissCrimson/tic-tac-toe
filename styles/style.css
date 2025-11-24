@@ -1,0 +1,92 @@
+body {
+    background-color: #323232;
+    font-family: 'PixelifySans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    /* macht den Body zum Flex-Container */
+    flex-direction: column;
+    /* Inhalt untereinander (Titel, Feld, Button) */
+    justify-content: center;
+    /* vertikal zentrieren */
+    align-items: center;
+    /* horizontal zentrieren */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Abstand nach unten */
+}
+
+#content {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* Die äußere Tabelle bekommt KEINEN Rand.
+   So entstehen nur innen Trennlinien. */
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    border: 0;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+/* Innere Linien: nur rechts und unten */
+td:hover {
+    background-color: #4a4a4a;
+    cursor: pointer;
+
+}
+
+/* Letzte Spalte: keine rechte Linie */
+tr td:last-child {
+    border-right: none;
+}
+
+/* Letzte Zeile: keine untere Linie */
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.d_flex_c_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+#restartBtn {
+    padding: 12px 24px;
+    font-size: 20px;
+    color: white;
+    background-color: #444;
+    border: 3px solid #888;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    border-color: #ccc;
+}
+
+#restartBtn:active {
+    transform: scale(0.97);
+}
